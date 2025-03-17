@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   text-align: center;
+   position: relative;
+   top: 20vh;
+   background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(202, 196, 196);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    /* color: cornsilk; */
+}
+
+.time{
+    font-size: 80px;
+}
+
+.des{
+    font-size: 30px;
+    /* border: 1px solid black; */
+}
+
+#darkMode{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    top: -100px;
+    /* border: none; */
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.semicolon{
+    font-size: 100px;
+    position: relative;
+    top: -30px;
+}
+
+#click{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.butt{
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+.box {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .box {
+    background-color: #333;
+}
+
+.time {
+    transition: color 0.3s ease;
+}
+
+.des {
+    transition: color 0.3s ease;
+}
+
+
+#darkMode svg {
+    fill: #333;
+    transition: fill 0.3s ease;
+}
+
+body.dark-mode #darkMode svg {
+    fill: #eee;
+}
+
+#darkMode:hover {
+    transform: scale(1.1);
+}
+
+.semicolon {
+    transition: color 0.3s ease;
+}
+
+.butt {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.butt svg {
+    fill: #333;
+    transition: fill 0.3s ease;
+}
+
+body.dark-mode .butt svg {
+    fill: #eee;
+}
+
+.butt:hover {
+    transform: scale(1.1);
+}
+
